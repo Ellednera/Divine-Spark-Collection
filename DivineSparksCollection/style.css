@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  /* every padding is inside the box, no longer added to the width & height */
+}
+
+body {
+	margin: 0;
+	background-color: #bbb;
+	font-size: 1em;
+}
+
+div.BSD {
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	font-size: 1.2em;
+}
+
+div.foreground {
+	background-color: #eee;
+	width: 50%;
+	margin: 5% auto;
+	padding: 3% 0;
+	font-size: 1.25em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 0; /* the dislay is too low, that's why this is set to 0 */
+}
+
+p.processed-message {
+	margin: 0 auto 3% auto;
+	text-align: center;
+	color: deeppink;
+	font-weight: bold;
+	/* font-style: italic; */
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	
+	margin: 2% auto;
+	width: 35%;
+	
+	background-color: pink;
+	color: deeppink;
+	
+	text-align: center;
+	padding: 2% 0;
+	
+	font-size: 1.38em;
+	font-weight: bold;
+}
+
+input, textarea, p.processed-message {
+	width: 60%;
+}
+
+input.general, input.buttons, textarea {
+	min-height: 35px;
+	text-align: center;
+	display: block;
+	margin: 2% auto;
+	font-family: Arial, sans-serif;
+	font-size: inherit;
+	
+}
+
+input.buttons {
+	font-weight: bold;
+	height: 40px;
+}
+
+textarea {
+	min-height: 100px;
+	height: 250px;
+	text-align: justify;
+	/* box-sizing will be applied for all, if not this will also cause the textarea to shrink a little bit */
+	/* this property excludes the border */
+	/* box-sizing: border-box; */
+	padding: 2%;
+	
+}
+
+
